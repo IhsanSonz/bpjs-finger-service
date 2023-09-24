@@ -22,19 +22,6 @@ func main() {
 		c.String(http.StatusOK, serviceStatus)
 	})
 
-	// // Define an API endpoint to activate BPJS fingerprint app
-	// r.GET("/activate-bpjs", func(c *gin.Context) {
-	// 	// Activate the BPJS fingerprint window by its title
-	// 	result := robotgo.ActiveName("After.exe")
-	// 	// result := robotgo.ActiveName("Notepad")
-
-	// 	if result == nil {
-	// 		c.String(http.StatusOK, "BPJS Fingerprint activated")
-	// 	} else {
-	// 		c.String(http.StatusNotFound, "BPJS Fingerprint activation failed")
-	// 	}
-	// })
-
 	r.GET("/activate-bpjs", func(c *gin.Context) {
 		// Replace "path/to/your/exefile.exe" with the actual path to your executable.
 		exePath := "./BPJSForeground.exe"
