@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/exec"
 
+	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/widget"
@@ -15,6 +16,7 @@ import (
 var serviceStatus = "Hello from github.com/IhsanSonz :)"
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 
 	// Define an API endpoint to identify that the service is running
@@ -56,8 +58,13 @@ func main() {
 
 	// Create a Fyne GUI
 	myApp := app.New()
+
 	myWindow := myApp.NewWindow("Service Status")
 	myLabel := widget.NewLabel(serviceStatus)
+
+	// Load the icon from a file
+	icon, _ := fyne.LoadResourceFromPath("./github-logo.png")
+	myWindow.SetIcon(icon)
 
 	// Create a container for the GUI elements
 	content := container.NewVBox(
