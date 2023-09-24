@@ -12,7 +12,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var serviceStatus = "Bruh is the service running or not?\nHello from github.com/IhsanSonz"
+var serviceStatus = "Hello from github.com/IhsanSonz :)"
 
 func main() {
 	r := gin.Default()
