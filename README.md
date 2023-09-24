@@ -8,7 +8,7 @@
 - [BPJSForegroundService.exe](BPJSForegroundService.exe)
 
 2. Run the executable [**BPJSForegroundService.exe**](BPJSForegroundService.exe)
-3. send GET request to (change <localhost> to <client IP> for trigger from third party):
+3. send GET request to (change &lt;localhost&gt; to &lt;client IP&gt; for trigger from third party):
 
 - http://localhost:8089/ to see if the service is active
 - http://localhost:8089/activate-bpjs/ to trigger the action (set fingerprint app to foreground)
