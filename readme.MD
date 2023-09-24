@@ -18,7 +18,7 @@
 1. [**BPJSForegroundService.exe**](BPJSForegroundService.exe)
 
 - create a window indicating that the app is running
-- create a service using [gin-gonic/gin](github.com/gin-gonic/gin)
+- create a service using [gin-gonic/gin](https://pkg.go.dev/github.com/gin-gonic/gin)
   - on endpoint / that response with message
   - on endpoint /activate-bpjs that trigger the action and send reponse of either success or error
 
